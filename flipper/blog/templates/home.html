@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h2>Blog Home page</h2>
+
+{% verbatim %}
+<div id="app" >
+{{ message }}
+</div>
+{% endverbatim %}
+
+<script src="{% static "blog/index.js"  %}">
+
+</script>
+
+{% endblock %}
